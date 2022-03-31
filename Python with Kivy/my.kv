@@ -1,0 +1,25 @@
+<MyGridLayout>
+    nama:nama
+    kelas:kelas
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+            
+            Label:
+                text: "Nama : "
+            TextInput:
+                id:nama
+                multiline:False
+            Label:
+                text: "Kelas : "
+            TextInput:
+                id:kelas
+                multiline:False
+        
+        Button:
+            text: "SIMPAN"
+            font_size: 32
+            on_press: root.tekan()
+                 
